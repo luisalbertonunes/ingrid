@@ -1,0 +1,166 @@
+/*
+ <!--
+ * [...]:
+ * -----------------------------------------------
+ * @author: LUIS ALBERTO NUNES 
+ * @version: 1.0.0, 15/11/2017
+ * @linguage: HTML, CSS, JAVASRCIPT
+ * -----------------------------------------------
+ * Feito especialmente para a Ingrid Xavier <3
+-->
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #263238;
+    font-family: 'Handlee', cursive;
+}
+
+.menor {
+    font-size: 10px;
+}
+
+.container {
+    border: 0px solid #000;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    float: left;
+}
+
+.container label {
+    display: block;
+    width: 100%;
+    color: #FFF;
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container input {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    max-width: 400px;
+    color: rgba(0, 0, 0, 0.84);
+    text-align: center;
+    height: 50px;
+    margin: 20px auto;
+    outline: 0;
+    font-size: 1.5em;
+    padding: 5px 30px;
+    border-radius: 3px;
+    border: 0px solid rgba(0, 0, 0, 1);
+    background-color: #FFF;
+    text-transform: uppercase;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 1);
+    font-family: 'Handlee', cursive;
+}
+
+.container input:focus {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+}
+
+.heart-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform: rotate(-135deg);
+    background: #CCC;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    will-change: transform;
+}
+
+.heart-animate {
+    animation: pulse 0.5s infinite alternate;
+}
+
+.heart-animate-slow {
+    animation: pulse 1s infinite alternate;
+}
+
+.heart-animate-fast {
+    animation: pulse 0.3s infinite alternate;
+}
+
+.heart-square {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #CCC;
+}
+
+.heart-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    background: #CCC;
+}
+
+.heart-top {
+    top: 100px;
+}
+
+.heart-left {
+    left: 100px;
+}
+
+.container .frase {
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: lowercase;
+    display: none;
+}
+
+.container .frase1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: lowercase;
+    display: none;
+}
+
+.container .frase2 {
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: lowercase;
+    display: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9) rotate(-135deg)
+    }
+    100% {
+        transform: scale(1.1) rotate(-135deg)
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .heart-container {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 100px;
+    }
+    .heart-square {
+        width: 100px;
+        height: 100px;
+    }
+    .heart-circle {
+        width: 100px;
+        height: 100px;
+    }
+    .heart-top {
+        top: 50px;
+    }
+    .heart-left {
+        left: 50px;
+    }
+}
